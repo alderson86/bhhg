@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black Hat Hacker Group - Em Breve</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    color: #c5c6c7;
+    background-image: url('https://images.eldiario.es/cultura/Anonymous_EDIIMA20160414_0706_18.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Camada escura sobre a imagem de fundo para realçar o texto */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+
+  /* Container para o conteúdo principal */
+  .main-content {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* Título da página */
+  .main-title {
+    font-size: 3rem;
+    color: #66fcf1;
+    text-shadow: 0 0 10px #66fcf1, 0 0 20px #66fcf1;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite alternate;
+  }
+
+  /* Texto animado "EM BREVE" */
+  .animated-text {
+    font-size: 5rem;
+    color: #45a29e;
+    text-shadow: 0 0 15px #45a29e, 0 0 30px #45a29e;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #45a29e;
+    animation:
+      typing 3s steps(15, end) forwards,
+      blink-caret 0.5s step-end infinite,
+      flicker 4s infinite;
+  }
+
+  /* Animação de digitação */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  /* Animação do cursor piscando */
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #45a29e; }
+  }
+
+  /* Animação de pulsação para o título */
+  @keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+  }
+
+  /* Animação de falha (flicker) para o texto "EM BREVE" */
+  @keyframes flicker {
+    0% { opacity: 1; }
+    2% { opacity: 0.8; }
+    4% { opacity: 1; }
+    10% { opacity: 0.7; }
+    12% { opacity: 1; }
+    15% { opacity: 0.8; }
+    20% { opacity: 1; }
+    22% { opacity: 0.6; }
+    24% { opacity: 1; }
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="main-content">
+    <h1 class="main-title">Black Hat Hacker Group</h1>
+    <div class="animated-text">EM BREVE...</div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="URL_DA_MUSICA_DE_SUSPENSE_AQUI" type="audio/mpeg">
+    Seu navegador não suporta a tag de áudio.
+  </audio>
+
+  <audio autoplay loop>
+    <source src="URL_DOS_GRITOS_E_CHOROS_AQUI" type="audio/mpeg">
+    Seu navegador não suporta a tag de áudio.
+  </audio>
+
+</body>
+</html>
